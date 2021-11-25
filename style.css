@@ -1,0 +1,45 @@
+body 
+{
+    background-color: aqua;
+    border: aqua;
+}
+h1
+{
+    background-color: blue;
+    border: blue;
+    border-style: dotted;
+    border-width: 5px;
+}
+.menu
+{
+    list-style-type: none;
+    background-color: cornflowerblue;
+    overflow: auto;
+}
+.menu li{
+    float: left;
+    padding: 20px;
+}
+.menu li:hover{
+    background-color: darkcyan;
+}
+.menu li a{
+    text-decoration: none;
+}
+.submenu{
+    list-style-type:none ;
+    background-color: darkolivegreen;
+    overflow: auto;
+    padding-left: 0px;
+    position: absolute;
+    display: none;
+}
+.submenu li{
+    float: none;
+}
+.submenu li:hover{
+    background-color: olive;
+}
+.menu li:hover .submenu{
+    display: block;
+}
